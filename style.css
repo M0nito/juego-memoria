@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url('fondo-memoria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    cursor: pointer;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta.revelada {
+    background: #fff;
+}
